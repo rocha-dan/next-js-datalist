@@ -59,11 +59,11 @@ export function Modal() {
 							<h1 className="header__h2">
 								{state.selectedEmployee ? (
 									<>
-										Editar <span>Employee</span>
+										Edit <span>Employee</span>
 									</>
 								) : (
 									<>
-										Adicionar <span>Employee</span>
+										Add <span>Employee</span>
 									</>
 								)}
 							</h1>
@@ -89,7 +89,7 @@ export function Modal() {
 										"Full name is required!"
 									) : (
 										<>
-											Nome Completo&nbsp;<span className="label__required">*</span>
+											Full name&nbsp;<span className="label__required">*</span>
 										</>
 									)}
 								</label>
@@ -141,7 +141,7 @@ export function Modal() {
 										"Address is required!"
 									) : (
 										<>
-											Endereco&nbsp;<span className="label__required">*</span>
+											Address&nbsp;<span className="label__required">*</span>
 										</>
 									)}
 								</label>
@@ -164,7 +164,7 @@ export function Modal() {
 										`${errors.phone.message}`
 									) : (
 										<>
-											Celular&nbsp;<span className="label__required">*</span>
+											Phone&nbsp;<span className="label__required">*</span>
 										</>
 									)}
 								</label>
@@ -194,7 +194,7 @@ export function Modal() {
 									type="button"
 									onClick={closeModal}
 								>
-									<CloseSVG /> Cancelar
+									<CloseSVG /> Cancel
 								</button>
 								<button className="btn btn__primary btn__icon" type="submit">
 									<CheckSVG /> {state.selectedEmployee ? "Update" : "Submit"}

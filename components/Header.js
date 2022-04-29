@@ -8,7 +8,7 @@ export function Header() {
 	return (
 		<header className="header">
 			<h1 className="header__h1">
-				Gerenciamento de<span> usuários</span>
+				Manage <span>Employees</span>
 			</h1>
 			<button
 				className="btn btn__primary btn__icon"
