@@ -7,10 +7,10 @@ const connection = {};
 		return;
 	}
 
-	try {mongoose.connect('mongodb+srv://chapola:chapola@cluster0.z0ejs.mongodb.net/', {dbName: 'myFirstDatabase'});
+	try {
 
-		const db = await mongoose.connect('mongodb+srv://chapola:chapola@cluster0.z0ejs.mongodb.net/', {dbName: 'myFirstDatabase'});
-		
+		const db = await mongoose.connect('mongodb+srv://chapola:chapola@cluster0.z0ejs.mongodb.net/', {dbName: 'test'});
+
 		connection.isConnected = db.connections[0].readyState;
 
 		console.log("MongoDB Connected");
