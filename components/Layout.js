@@ -4,9 +4,11 @@ export function Layout({ children }) {
 	return (
 		<main className="layout">
 			<Head>
-				<title>NextJS | Full-stack CRUD App</title>
+				<title>NextJS | Gerenciamento de Usuários</title>
 			</Head>
+			comeca
 			{children}
+			termina
 		</main>
 	);
 }
