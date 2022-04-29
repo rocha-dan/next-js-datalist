@@ -8,7 +8,7 @@ const connection = {};
 	}
 
 	try {
-		const db = await mongoose.connect('mongodb://localhost/test', {
+		const db = await mongoose.connect('mongodb+srv://chapola:chapola@cluster0.z0ejs.mongodb.net/myFirstDatabase?retryWrites=true&w=majority', {
 			useNewUrlParser: true,
 			useUnifiedTopology: true,
 			useCreateIndex: true,
