@@ -8,12 +8,7 @@ const connection = {};
 	}
 
 	try {
-		const db = await mongoose.connect('mongodb+srv://chapola:chapola@cluster0.z0ejs.mongodb.net/test?retryWrites=true&w=majority', {
-			useNewUrlParser: true,
-			useUnifiedTopology: true,
-			useCreateIndex: true,
-			useFindAndModify: false,
-		});
+		const db = await mongoose.connect('mongodb+srv://chapola:chapola@cluster0.z0ejs.mongodb.net/test?retryWrites=true&w=majority');
 
 		connection.isConnected = db.connections[0].readyState;
 
